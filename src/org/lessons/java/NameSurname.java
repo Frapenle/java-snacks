@@ -5,9 +5,10 @@ import java.util.Random;
 public class NameSurname {
 
 	public static void main(String[] args) {
-		String[] name = {"Francesco", "Marta", "Claudia", "Giovanni"};
-		String[] surname = {"Rossi", "Bianchi", "Totti", "Dionisi"};
+		String[] name = {"Francesco", "Marta", "Claudia", "Giovanni", "Aldo", "Guido"};
+		String[] surname = {"Rossi", "Bianchi", "Totti", "Dionisi", "Verdi", "Re"};
 		Random randomAlias = new Random();
+		
 		for (int i=0; i < name.length; i++) {
 			int rndName = randomAlias.nextInt(name.length);
 			int rndSurname = randomAlias.nextInt(surname.length);
@@ -18,8 +19,6 @@ public class NameSurname {
             System.out.println(rName + " " + rSurname);
 			
 		}
-		
-
 	}
 
 }
