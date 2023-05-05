@@ -23,8 +23,6 @@ public class Palindroma {
 		StringBuilder sb = new StringBuilder(word);
 		String reverseWord = sb.reverse().toString();
 
-//		System.out.println("Stringa originale: " + word);
-//		System.out.println("Stringa invertita: " + sb.reverse().toString());
 		if(reverseWord.equals(word)) {
 			System.out.println(word + " e palindroma");
 		} else {
