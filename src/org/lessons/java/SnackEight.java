@@ -24,8 +24,6 @@ public class SnackEight {
 		}
 		System.out.println(Arrays.asList(evenArray));
 		System.out.println(Arrays.asList(oddArray));
-		
-
 	}
 
 }
