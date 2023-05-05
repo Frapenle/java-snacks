@@ -12,8 +12,10 @@ public class RndNums {
 		int total = 0;
 		int evenSum = 0;
 		int oddSum = 0;
-		int minVal = 100;
-		int maxVal = 0;
+		int oddCount = 0;
+
+		int minVal = Integer.MAX_VALUE;
+		int maxVal = Integer.MIN_VALUE;
 		
 		Random r = new Random();
 		
@@ -24,6 +26,7 @@ public class RndNums {
 			if( randomNumber % 2 == 0) {
 				evenSum += randomNumber;
 			} else {
+				oddCount++;
 				oddSum += randomNumber;
 			}
 			
@@ -34,12 +37,14 @@ public class RndNums {
 				maxVal = randomNumber;
 			}
 		}
+		if (oddCount > 0) {
+			System.out.println("Media odd value: " + oddSum / oddCount);			
+		}
 		
 		System.out.println("Totale: " + total);
 		System.out.println("Even total: " + evenSum);
 		System.out.println("Odd total: " + oddSum);
 		System.out.println("Media: " + total / number);
-		System.out.println("Media odd value: " + oddSum / number);
 		System.out.println("Min value: " + minVal);
 		System.out.println("Max value: " + maxVal);
 		sc.close();
