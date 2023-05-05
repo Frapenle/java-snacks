@@ -9,15 +9,26 @@ public class Palindroma {
 		System.out.println("Inserisci una parola per verificare se e' palindroma");
 		String word = sc.nextLine();
 		sc.close();
-		String reverseWord = "";
-		for (int i = word.length() - 1; i >= 0; i-- ) {
-			reverseWord += word.charAt(i);
-		}
+//		String reverseWord = "";
+//		for (int i = word.length() - 1; i >= 0; i-- ) {
+//			reverseWord += word.charAt(i);
+//		}
+//		
+//		if(reverseWord.equals(word)) {
+//			System.out.println(word + " e' palindroma");
+//		} else {
+//			System.out.println(word + " non e' palindroma");
+//		}
 		
+		StringBuilder sb = new StringBuilder(word);
+		String reverseWord = sb.reverse().toString();
+
+//		System.out.println("Stringa originale: " + word);
+//		System.out.println("Stringa invertita: " + sb.reverse().toString());
 		if(reverseWord.equals(word)) {
-			System.out.println(word + " e' palindroma");
+			System.out.println(word + " e palindroma");
 		} else {
-			System.out.println(word + " non e' palindroma");
+			System.out.println(word + " non e palindroma");
 		}
 	}
 }
