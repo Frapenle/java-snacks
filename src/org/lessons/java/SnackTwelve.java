@@ -21,5 +21,4 @@ public class SnackTwelve {
 		}
 		System.out.println(Arrays.asList(newArray));
 	}
-
 }

@@ -11,7 +11,7 @@ public class SnackTen {
 		sc.close();
 		
 		double area = Math.PI * (radius * radius);
-		double circumference = Math.PI * (radius * 2) ;
+		double circumference = Math.PI * (radius * 2);
 		
 		System.out.println("Area is: " + area);
 		System.out.println("Circumference is: " + circumference);
